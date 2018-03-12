@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{BA80B194-F1C1-48E4-A342-982F2D1B4C74}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PracticaSegue/Controllers/FirstViewController.cs">
+    <Files>
+      <File FileName="PracticaSegue/Controllers/FirstViewController.cs" Line="26" Column="19" />
+      <File FileName="PracticaSegue/Controllers/SecondViewController.cs" Line="19" Column="9" />
+      <File FileName="PracticaSegue/Models/GeneroPickerViewModel.cs" Line="22" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.PracticaSegue PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A40958BA-3DB4-42A9-A1AC-716CC2157D1F" automaticSigning="False">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.PracticaSegue>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
