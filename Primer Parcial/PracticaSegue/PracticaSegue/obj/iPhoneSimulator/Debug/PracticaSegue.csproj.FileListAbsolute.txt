@@ -1,9 +1,0 @@
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/bin/iPhoneSimulator/Debug/PracticaSegue.exe
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/bin/iPhoneSimulator/Debug/PracticaSegue.pdb
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool/_BundleResourceWithLogicalName.items
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_PartialAppManifest.items
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_BundleResourceWithLogicalName.items
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/PracticaSegue.csproj.CoreCompileInputs.cache
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/PracticaSegue.exe
-/Users/issc611/Desktop/ISSC611/Primer Parcial/PracticaSegue/PracticaSegue/obj/iPhoneSimulator/Debug/PracticaSegue.pdb

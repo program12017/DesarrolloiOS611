@@ -16,6 +16,9 @@ namespace ExamenPrimerParcial
 		UIKit.UIButton BtnCalculate { get; set; }
 
 		[Outlet]
+		UIKit.UIBarButtonItem BtnGoToSettings { get; set; }
+
+		[Outlet]
 		UIKit.UILabel LblAddition { get; set; }
 
 		[Outlet]
@@ -52,9 +55,39 @@ namespace ExamenPrimerParcial
 				BtnCalculate = null;
 			}
 
+			if (LblAddition != null) {
+				LblAddition.Dispose ();
+				LblAddition = null;
+			}
+
+			if (LblDivision != null) {
+				LblDivision.Dispose ();
+				LblDivision = null;
+			}
+
+			if (LblMultiplication != null) {
+				LblMultiplication.Dispose ();
+				LblMultiplication = null;
+			}
+
+			if (LblNumber1 != null) {
+				LblNumber1.Dispose ();
+				LblNumber1 = null;
+			}
+
+			if (LblNumber2 != null) {
+				LblNumber2.Dispose ();
+				LblNumber2 = null;
+			}
+
 			if (LblResult != null) {
 				LblResult.Dispose ();
 				LblResult = null;
+			}
+
+			if (LblSubstraction != null) {
+				LblSubstraction.Dispose ();
+				LblSubstraction = null;
 			}
 
 			if (SldOperator != null) {
@@ -72,34 +105,9 @@ namespace ExamenPrimerParcial
 				TxtNumber2 = null;
 			}
 
-			if (LblNumber1 != null) {
-				LblNumber1.Dispose ();
-				LblNumber1 = null;
-			}
-
-			if (LblNumber2 != null) {
-				LblNumber2.Dispose ();
-				LblNumber2 = null;
-			}
-
-			if (LblAddition != null) {
-				LblAddition.Dispose ();
-				LblAddition = null;
-			}
-
-			if (LblSubstraction != null) {
-				LblSubstraction.Dispose ();
-				LblSubstraction = null;
-			}
-
-			if (LblMultiplication != null) {
-				LblMultiplication.Dispose ();
-				LblMultiplication = null;
-			}
-
-			if (LblDivision != null) {
-				LblDivision.Dispose ();
-				LblDivision = null;
+			if (BtnGoToSettings != null) {
+				BtnGoToSettings.Dispose ();
+				BtnGoToSettings = null;
 			}
 		}
 	}

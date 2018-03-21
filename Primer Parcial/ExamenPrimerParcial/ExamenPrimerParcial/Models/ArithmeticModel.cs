@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using ExamenPrimerParcial.Enums;
 namespace ExamenPrimerParcial.Models
 {
@@ -15,7 +16,7 @@ namespace ExamenPrimerParcial.Models
 
         #region Dataviews
 
-        String result;
+        //String result;
         public String Result
         {
             get
@@ -77,7 +78,11 @@ namespace ExamenPrimerParcial.Models
                     break;
             }
 
-            return resultNumber.ToString("0.##");
+
+            //Formatting the number.
+            CultureInfo mexicanLocale = new CultureInfo("es-MX");
+
+            return resultNumber.ToString("n", mexicanLocale);
 
         }
 

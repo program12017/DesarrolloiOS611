@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TOE-uf-JtW">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Examen Calculadora-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NAd-2U-laB">
-                                <rect key="frame" x="16" y="20" width="288" height="251.5"/>
+                                <rect key="frame" x="16" y="64" width="288" height="251.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wJb-yI-h4O">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
@@ -121,8 +121,12 @@
                             <constraint firstItem="NAd-2U-laB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BO4-4X-A2a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Examen Calculadora" id="XpB-re-bAV">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Uow-97-l0N"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="BtnCalculate" destination="6Uq-Cq-TKy" id="CHj-SQ-rJu"/>
+                        <outlet property="BtnGoToSettings" destination="Uow-97-l0N" id="fJd-Gq-8VU"/>
                         <outlet property="LblAddition" destination="qjv-Ew-jGJ" id="Yfe-Bp-LLu"/>
                         <outlet property="LblDivision" destination="DTG-RC-jn1" id="swe-g5-MxV"/>
                         <outlet property="LblMultiplication" destination="IFj-JK-2f7" id="hv1-14-XTG"/>
@@ -137,6 +141,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="511.875" y="114.08450704225352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Pq-gY-qPX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TOE-uf-JtW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YD1-cc-KmJ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OkC-mG-4FL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56M-Xr-11o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-598" y="86"/>
         </scene>
     </scenes>
 </document>

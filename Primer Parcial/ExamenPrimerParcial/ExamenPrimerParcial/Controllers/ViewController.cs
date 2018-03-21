@@ -36,8 +36,6 @@ namespace ExamenPrimerParcial
             TxtNumber1.BackgroundColor = UIColor.Clear;
             TxtNumber2.BackgroundColor = UIColor.Clear;
 
-            //BtnCalculate.BackgroundColor = UIColor.Clear;
-
 
             //Initialize the global variables.
             isFinishedTheAnimation = true;
@@ -51,6 +49,8 @@ namespace ExamenPrimerParcial
             BtnCalculate.TouchUpInside += BtnCalculate_TouchUpInside;
 
             SldOperator.ValueChanged += SldOperator_ValueChanged;
+
+            BtnGoToSettings.Clicked += BtnGoToSettings_Clicked;
         }
 
         public override void ViewWillAppear(bool animated)
@@ -142,6 +142,11 @@ namespace ExamenPrimerParcial
         }
 
 
+        void BtnGoToSettings_Clicked(object sender, EventArgs e)
+        {
+            UIApplication.SharedApplication.OpenUrl(new NSUrl("app-settings:"));
+        }
+
         void ShowMessage(String title, String content)
         {
             UIAlertController alert = UIAlertController.Create(title, content, UIAlertControllerStyle.Alert);
@@ -165,7 +170,14 @@ namespace ExamenPrimerParcial
 
                 //Changing the background and StatusBar
                 View.BackgroundColor = UIColor.DarkGray;
-                UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
+
+                //It wasn't necesary anymore when adding the Navigation Controller.
+                //UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
+
+                var navigationBar = this.NavigationController.NavigationBar;
+                navigationBar.TintColor = UIColor.Black;
+                navigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.Blue };
+                BtnGoToSettings.TintColor = UIColor.Red;
 
 
                 //Chaning the main controls.
@@ -210,7 +222,15 @@ namespace ExamenPrimerParcial
             {
                 //Changing the background and StatusBar
                 View.BackgroundColor = UIColor.White;
-                UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.Default;
+
+                //It wasn't necesary anymore when adding the Navigation Controller.
+                //UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.Default;
+
+                var navigationBar = this.NavigationController.NavigationBar;
+                navigationBar.TintColor = View.TintColor;
+                navigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.Black };
+                BtnGoToSettings.TintColor = View.TintColor;
+
 
                 //Chaning the main controls.
 
@@ -315,7 +335,6 @@ namespace ExamenPrimerParcial
                 new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace),
 
                 //A callback function.
-                //new UIBarButtonItem(UIBarButtonSystemItem.Done, BtnDone_Clicked)
                 btnDone
             };
             toolbar.SetItems(bbs, false);
